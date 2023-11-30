@@ -1,13 +1,12 @@
 #include <stdio.h>
 
-// Function to swap two elements
+
 void swap(int* a, int* b) {
     int temp = *a;
     *a = *b;
     *b = temp;
 }
 
-// Function to partition the array
 int partition(int arr[], int low, int high) {
     int pivot = arr[high];
     int i = (low - 1);
@@ -22,7 +21,6 @@ int partition(int arr[], int low, int high) {
     return (i + 1);
 }
 
-// Function to perform Quick Sort
 void quickSort(int arr[], int low, int high) {
     if (low < high) {
         int pi = partition(arr, low, high);
@@ -32,7 +30,7 @@ void quickSort(int arr[], int low, int high) {
     }
 }
 
-// Function to print the array
+
 void printArray(int arr[], int size) {
     for (int i = 0; i < size; i++) {
         printf("%d ", arr[i]);
@@ -40,7 +38,7 @@ void printArray(int arr[], int size) {
     printf("\n");
 }
 
-// Driver code
+
 int main() {
     int arr[] = {64, 34, 25, 12, 22, 11, 90};
     int n = sizeof(arr) / sizeof(arr[0]);
