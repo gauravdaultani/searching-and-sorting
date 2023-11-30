@@ -26,7 +26,6 @@ void countingSort(int arr[], int n, int exp) {
         output[count[(arr[i] / exp) % 10] - 1] = arr[i];
         count[(arr[i] / exp) % 10]--;
     }
- b 
     for (int i = 0; i < n; i++) {
         arr[i] = output[i];
     }
